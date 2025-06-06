@@ -12,8 +12,8 @@ function Home() {
     useEffect(() => {
         fetchUsers();
     }, [])
-
-    return <h1>Home</h1>
+ 
+    return <h1>{users.length > 0 ? users[0].name : null}</h1>
 }
 
 export default Home
