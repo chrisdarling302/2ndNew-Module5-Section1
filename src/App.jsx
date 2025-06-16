@@ -7,11 +7,10 @@ import React from "react";
 
 function App() {
   return (
-    <Router>
-      <Nav />
+    <Router future={{ v7_startTransition: true, v7_relativeSplatPath: true }}>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/users/:username" element={<Users />} />
+        <Route path="/users/:id" element={<Users />} />
       </Routes>
     </Router>
   );
